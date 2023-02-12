@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+
+:root {
+  --very-dark-blue: #131518;
+  --bg-gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--very-dark-blue);
+  color: white;
+  font-family: 'Overpass';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 327px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 32px; 
+  border-radius: 15px;
+  background: var(--bg-gradient);
+}
+
+.icon {
+  background: #262E38;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 18px;
+}
+
+p {
+  margin: 0;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #969FAD;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.rating > div {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.175px;
+  
+  cursor: pointer;
+
+  background: #262E38;
+  color: #7C8798;
+}
+
+.rating > div.active {
+  background: #7C8798;
+  color: white;
+}
+
+.rating > div:hover {
+  background: #FC7614;
+  color: white;
+}
+
+#submit-rating {
+  margin-top: 24px;
+  background: #FC7614;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.86667px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 22.5px;
+  cursor: pointer;
+}
+
+#submit-rating:hover {
+  color: #FC7614;
+  background: white;
+}
+
+#result-img-container {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#result-text {
+  color: #FC7614;
+  font-weight: 400;
+  font-size: 15px;
+
+  background: #262E38;
+  border-radius: 22.5px;
+  width: 193px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+
+#result-heading {
+  
+  margin-top: 32px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#result > p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #969FAD;
+}
